@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Basotho Cultural Heritage
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+ 
+</head>
+<body>
+  <header>
+    <h1>Basotho Cultural Heritage</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothing.html">Traditional Clothing</a></li>
+        <li><a href="music and dance.html">Music & Dance</a></li>
+        <li><a href="crafts.html">Crafts & Art</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to the Heart of Basotho Culture and Heritage</h2>
+      <p>
+          The Basotho people carry a rich tapestry of history, traditions, and values that continue to inspire pride and unity across generations. From the iconic mokorotlo hat and the warmth of the Seanamarena blanket, to the deep-rooted customs, music, and storytelling, Basotho culture is a living treasure.
+      </p>
+
+      <p> 
+          This website is dedicated to celebrating, preserving, and sharing the beauty of our heritage. Here, you will discover the history of our people and explore traditional practices. Whether you are Mosotho or simply curious about our culture, this space will take you on a journey through the soul of Lesotho.
+      </p>
+    </section>
+
+    
+    <div class="body">
+      <img src="images\horse 4.webp" class="slide active" alt="Mosotho Man On A Horse"/>
+      <img src="images\Basotho-Blanket.jpg" class="slide" alt="Basotho Blankets"/>
+      <img src="images\basotho house.jpg" class="slide" alt="Basotho People Wearing Mokorotlo hat"/>
+      <img src="images\horse 2.webp" class="slide" alt="Mosotho Man On A Horse"/>
+      <img src="images/bontate mokorotlo.jpg" class="slide" alt="Basotho Wearing Mokorotlo hat"/>
+    </div>
+  </main>
+
+  <script>
+    
+    const slides=document.querySelectorAll('.slide');
+    let idx=0;
+    setInterval(()=>{
+      slides[idx].classList.remove('active');
+      idx=(idx+1)%slides.length;
+      slides[idx].classList.add('active');
+    },4000);
+  </script>
+</body>
+</html>

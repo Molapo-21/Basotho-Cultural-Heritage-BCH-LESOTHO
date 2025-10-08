@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Contact & Feedback</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothing.html">Traditional Clothing</a></li>
+        <li><a href="music and dance.html">Music & Dance</a></li>
+        <li><a href="crafts.html">Crafts & Art</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <form action="/submit" method="post">
+      <fieldset>
+    <legend>Personal Information</legend>
+      <label for="name">Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label for="email">Email
+        <input type="email" name="email" required>
+      </label>
+      </fieldset>
+
+      <Fieldset>
+      <legend>Topic Of Interest</legend>
+      <label for="topic of Interest">
+        <select name="topic">
+          <option>Traditional Clothing</option>
+          <option>Music & Dance</option>
+          <option>Crafts & Art</option>
+          <option>General</option>
+        </select>
+      </label>
+      </Fieldset>
+       
+        <fieldset>
+    <legend>Preferences</legend>
+    
+    <label>
+      <input type="checkbox" name="newsletter" value="yes">
+      Subscribe to Newsletter
+    </label>
+    
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="lesotho">Lesotho</option>
+      <option value="south-africa">South Africa</option>
+      <option value="Botswana">Botswana</option>
+      <option value="Zambia">Zambia</option>
+      <option value="other">Other</option>
+    </select>
+  </fieldset>
+
+      <label for="message">Message
+        <textarea name="message" rows="3" colu required></textarea>
+      </label> <br>
+
+      <button type="submit">Send Message</button> <br>
+      </fieldset>
+    </form>
+    </legend>
+  </main>
+</body>
+
+<footer>
+  <div class="content block-content">
+      
+<div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="text-center">
+    © Copyright BCH 2025. All Rights Reserved. 
+</div>
+</footer>
+</html>
